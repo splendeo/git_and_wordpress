@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Git & Wordpress</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content title-slide" ref="intro/intro/1">
+<h1>Git &amp; WordPress</h1></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/intro/2">
+<h1>Git</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="intro/intro/3">
+<h1>Secciones</h1>
+
+<ul>
+<li>Control de versiones</li>
+<li>Referencias</li>
+<li>Git: Instalaci&#xF3;n</li>
+<li>Git: Comandos</li>
+<li>Git: Flujo de trabajo</li>
+<li>GitHub</li>
+<li>Conflictos</li>
+<li>Git &amp; WordPress</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/intro/4">
+<h1>Control de Versiones</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/5">
+<h1>Versiones locales</h1>
+
+<p><img src="./file/intro/local-versions.png" width="400" height="336" alt="local-versions"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/6">
+<h1>Versiones en el servidor</h1>
+
+<p><img src="./file/intro/server-versions.png" width="500" height="392" alt="server-versions"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/7">
+<h1>Versiones en todos sitios</h1>
+
+<p><img src="./file/intro/everywhere-versions.png" width="500" height="563" alt="everywhere-versions"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/intro/8">
+<h1>Referencias</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="intro/intro/9">
+<h1>Referencias</h1>
+
+<ul>
+<li><a href="http://gitref.org/">gitref.org</a></li>
+<li><a href="http://git-scm.com/book/en/Getting-Started">git-scm.com/book/en/Getting-Started</a></li>
+<li><a href="http://help.github.com/">help.github.com</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/intro/10">
+<h1>Git: instalaci&#xF3;n</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/11">
+<h1>Instalaci&#xF3;n</h1>
+
+<ul>
+<li>Mac: <a href="http://help.github.com/mac-set-up-git/">help.github.com/mac-set-up-git/</a></li>
+<li>Win: <a href="http://help.github.com/win-set-up-git/">help.github.com/win-set-up-git/</a></li>
+<li>Linux: <a href="http://help.github.com/linux-set-up-git/">help.github.com/linux-set-up-git/</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/12">
+<h1>Un &#xFA;ltimo paso</h1>
+
+<pre class="sh_shell"><code>git config branch.autosetuprebase always</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/intro/13">
+<h1>Comandos</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="intro/intro/14">
+<h1>Mi primer repositorio</h1>
+
+<pre class="sh_shell"><code>mkdir myrepo # md for win
+cd myrepo
+git init</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/15">
+<h1>Mi primer commit</h1>
+
+<pre class="sh_shell"><code>vim Readme # (mate, nano, edit...)
+git status
+git add
+git commit -m 'Add readme file'</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/16">
+<p><img src="./file/intro/operations.png" width="500" height="460" alt="operations"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/17">
+<h1>Modifiquemos Readme</h1>
+
+<pre class="sh_shell"><code>vim Readme # (mate, nano, edit...)
+git status</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/18">
+<h1>A&#xF1;adamos el cambio a stage</h1>
+
+<pre class="sh_shell"><code>git add
+git status</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/19">
+<h1>Confirmemos el cambio</h1>
+
+<pre class="sh_shell"><code>git commit
+git status</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/20">
+<h1>Branches / ramas</h1>
+
+<pre class="sh_shell"><code>git checkout -b test
+git branch -a
+git status</code></pre>
+
+<p>Haz al menos dos commits en la branch test</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/21">
+<h1>&#xBF;Qu&#xE9; pasa con master?</h1>
+
+<pre class="sh_shell"><code>git checkout master
+git log
+git checkout test
+git log</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/22">
+<h1>Merge / Unir</h1>
+
+<pre class="sh_shell"><code>git checkout master
+git merge test
+git log</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/23">
+<h1>Borrar una branch</h1>
+
+<pre class="sh_shell"><code>git branch -d test</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/intro/24">
+<h1>Flujo de trabajo</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/25">
+<h1>Workflow</h1>
+
+<ul>
+<li>Crear una topic-branch</li>
+<li>Trabajar en la topic-branch</li>
+<li>Merge master en la topic branch</li>
+<li>Merge topic en master</li>
+<li>Borrar la topic branch</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/intro/26">
+<h1>GitHub</h1>
+
+<p><img src="./file/intro/octocat.png" width="560" height="475" alt="octocat"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/27">
+<h1>Compartir c&#xF3;digo</h1>
+
+<p>Crea un repositorio en <a href="http://github.com">github.com</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/28">
+<h1>Repositorio remoto</h1>
+
+<pre class="sh_shell"><code>git remote add origin git@github.com:...</code></pre>
+
+<h1>Comparte el c&#xF3;digo</h1>
+
+<pre class="sh_shell"><code>git push -u origin master</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/29">
+<h1>Remoto vs Local</h1>
+
+<p><img src="./file/intro/share-repository.png" width="500" height="563" alt="share-repository"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/intro/30">
+<h1>Conflictos</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/31">
+<h1>C&#xF3;mo se resuelve un conflicto</h1>
+
+<pre class="sh_shell"><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:file.txt
+Hello world
+=======
+Goodbye
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 77976d:file.txt</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/intro/32">
+<h1>Wordpress</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/33">
+<h1>Git &amp; WordPress</h1>
+
+<ul>
+<li>Instala wordpress en tu m&#xE1;quina</li>
+<li>Crea un repositorio solo del tema</li>
+<li>Comparte ese tema</li>
+</ul>
+</div>
+</div></div>
+
+</body>
+</html>
