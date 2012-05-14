@@ -52,7 +52,8 @@
 # Un último paso #
     
     @@@ shell
-    git config branch.autosetuprebase always
+    git config --global \
+        branch.autosetuprebase always
 
 !SLIDE subsection
 # Comandos #
